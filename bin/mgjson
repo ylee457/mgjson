@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
+require 'mgjson'
+
+
+puts "ARGV.size = #{ARGV.size}"
+
+if ARGV.size < 1 
+  puts "Error! Please enter file_name.json. Usage: ./bin/mgjson answer.json\n"
+  exit
+end
+
+mg_json = Mgjson.new
+mg_json.run ARGV[0]

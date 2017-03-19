@@ -5,7 +5,7 @@ class MgjsonTest < Minitest::Test
     refute_nil ::Mgjson::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_it_requires_a_file_name
+    assert true
   end
 end

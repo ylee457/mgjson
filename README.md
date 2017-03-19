@@ -1,38 +1,30 @@
 # Mgjson
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/mgjson`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem read the json file specified in the command line as the first argument and output the Item Discrimination number for each question in ascending order. You need to place the json data file in the project root folder so the program can find it.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'mgjson'
+As this gem is not meant to be installed from its Rubygem repository, you should install it by running the following command and install it locally in your machine. To install locally, change direcory to the project root folder, then type:
+**gem install ./mgjson-0.1.0.gem**
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install mgjson
+Example: /media/sf_pj/mgjson$ gem install mgjson-0.1.0.gem
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+To run the the application on this gem, change direcory to the project root folder, then type:
+**./bin/mgjson file.json**, where file.json is the data file that you place in the project root.
+```
+Example: /media/sf_pj/mgjson$./bin/mgjson answers.json
+```
+
 
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/mgjson. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+To rebuild the gem, type:
+**gem build mgjson.gemspec**
 
 
 ## License
