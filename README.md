@@ -23,8 +23,24 @@ Example: /media/sf_pj/mgjson$./bin/mgjson answers.json
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-To rebuild the gem, type:
+### Rebuild the gem
+
+_Things to watch out for while rebuilding the gem with same version:_
+
+You must remove the previously built gem file from your project folder
+```
+**Example: /media/sf_pj/mgjson$ rm mgjson-0.1.0.gem**
+```
+
+You must check in all your changes to Git
+
+Then you can rebuild with the following command:
 **gem build mgjson.gemspec**
+
+
+To rebuild gem with native extensions for your local machine, type:
+**bundle exec gem pristine mgjson-0.1.0.gem**
+
 
 
 ## License
