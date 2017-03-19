@@ -8,4 +8,8 @@ class MgjsonTest < Minitest::Test
   def test_it_requires_a_file_name
     assert true
   end
+
+  def test_it_can_output_a_sorted_array
+  	assert false
+  end
 end

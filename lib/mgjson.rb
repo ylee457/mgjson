@@ -1,16 +1,17 @@
 require "mgjson/version"
 require 'json'
-#require "mgjson/student"
-#require "mgjson/question"
+require "mgjson/student"
+require "mgjson/question"
 
 
 class Mgjson
 
 	def initialize
+		@total_students = []
+		@total_questions = []
 	end
   
   def run(title)
-  	puts "Hello World, #{title}"
 
   	puts "Current path is #{File.absolute_path('.')}"
 
@@ -29,7 +30,7 @@ class Mgjson
       
       end
 
-      puts "Total records is #{data_hash.size}"
+      puts "Total records is #{data_hash.size}. Perfect!"
 
     rescue StandardError => e
 
