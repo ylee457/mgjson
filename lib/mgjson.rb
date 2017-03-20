@@ -30,7 +30,7 @@ class Mgjson
       
       end
 
-      puts "Total records is #{data_hash.size}. Perfect!"
+      puts "Total records is #{data_hash.size}. Perfect too!"
 
     rescue StandardError => e
 
