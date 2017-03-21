@@ -1,11 +1,18 @@
 class Question
 
-	attr_accessor :name, :number_correct, :number_incorrect, :item_discrimination
+	attr_accessor :name, :item_discrimination
 
-	def initialize(name, number_correct, number_incorrect)
+	def initialize(name)
 
-		@name, @number_correct, @number_incorrect = name, number_correct, number_incorrect
+		@name = name
 		@item_discrimination = 0.0
 	end
+
+
+	def to_s
+		"Question: #{@name}. Item Discrimination Value: #{@item_discrimination.round(2)}"
+	end
+
+
 
 end

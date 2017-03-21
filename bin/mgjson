@@ -2,11 +2,8 @@
 
 require 'mgjson'
 
-
-puts "ARGV.size = #{ARGV.size}"
-
 if ARGV.size < 1 
-  puts "Error! Please enter file_name.json. Usage: ./bin/mgjson answer.json\n"
+  puts "Error! Please enter file_name.json. For example: ruby -Ilib ./bin/mgjson answers.json\n"
   exit
 end
 

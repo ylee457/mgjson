@@ -14,8 +14,11 @@ Example: /media/sf_pj/mgjson$ gem install mgjson-0.1.0.gem
 
 To run the the application on this gem, change direcory to the project root folder, then type:
 **./bin/mgjson file.json**, where file.json is the data file that you place in the project root.
+or **ruby -Ilib ./bin/mgjson file.json**, where file.json is the data file that you place in the project root.
 ```
 Example: /media/sf_pj/mgjson$./bin/mgjson answers.json
+or
+/media/sf_pj/mgjson$ ruby -Ilib ./bin/mgjson answers.json
 ```
 
 
