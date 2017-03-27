@@ -1,7 +1,7 @@
 # Mgjson
 
 ## Description:
-Give a 1000 questions to 100 students and ask them to answer these questions(students can skip some of the questions if they do not wish to answer), how well do we know these questions evaluate the students' ability.
+Give a 1000 questions to 100 students and ask them to answer these questions(students can skip some of the questions if they do not wish to answer), how well do we know these questions evaluate the students' ability?
 
 One way to solve this is to use the Item Discrimination algorithm. An Item Discrimination, which has a range of -1.0 to 1.0, can roughly indicate how well the question evaluates student ability. Values above 0.3 are generally good questions, values between 0.0 and 0.3 are mediocre, and values under 0.0 usually have errors in their grading.
 
