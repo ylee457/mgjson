@@ -30,7 +30,7 @@ class Mgjson
       # sort the questions
       questions.sort! {|a, b| a.item_discrimination <=> b.item_discrimination}
 
-      print_questions("", questions)
+      print_questions(questions)
 
 
     rescue StandardError => e
@@ -95,12 +95,14 @@ class Mgjson
       # print to console - demostration code
       #students = @students.values
       #print_students("Student info #", students)
+      #questions = @questions.values
+      #print_questions("Demo prn#", questions)
 
     end
 
 
     # print all the students's percent_correct
-    def print_students(label, students)
+    def print_students(label='', students)
       
       students.each do |s|
       
@@ -111,7 +113,7 @@ class Mgjson
     end
 
 
-    def print_questions(label, questions)
+    def print_questions(label='', questions)
       
       questions.each do |q|
         puts "#{label} #{q}"
